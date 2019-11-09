@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="freelance Front-End web UI/UX Developer" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML, CSS, UI, UX, a11y" />
+    <meta name="language" content="en" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" sizes="16x16" href="img/undraw_profile_6l1l.svg" type="image/svg" />
+    <!-- Title -->
+    <title>Document</title>
+    <!-- Very Nice Reset -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- MAIN CSS Style File -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="grid homepage">
+    <div class="settings-panel a11y-modal" id="settings-panel" data-modla role="dialog" tabindex="-1"
+        aria-labelledby="settings-panel_heading">
+        <div data-modal-document role="document">
+            <h3 class="mt0 mb0 settings-title ally-moda_heading" id="settings-panel_heading">
+                Preferences
+            </h3>
+            <p class="settings-desc">Customize the interface to your preference.</p>
+            <br />
+            <label for="toggle" class="theme-toggler settings-option" id="theme-toggler">
+                <span class="theme-toggler_label">Dark Mode</span>
+                <input type="checkbox" id="toggle" name="theme" class="theme-toggler_checkbox js-first-focus" checked />
+                <span aria-hidden="true" class="theme-toggler_switch"></span>
+            </label>
+            <button type="button" class="a11y-modal_close-btn is-icon-btn js-last-focus" aria-label="close" id="close">
+                <span data-modla-x></span>
+            </button>
+        </div>
+    </div>
+    <!-- Start Header -->
+    <header class="main-header">
+        <h2 class="logo mt0 mb0">
+            Development
+        </h2>
+        <nav class="main-nav">
+            <ul id="menu" class="main-nav_list clearfix">
+                <li class="main-nav_item">
+                    <a href="#">work</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="#">speaking</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="#">articles</a>
+                </li>
+                <li class="main-nav_item">
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="settings-wrapper">
+            <button type="button" class="button settings-panel-toggle" data-modal-open="settings-panel"
+                id="settings-panel_trigger-BITTON">
+                <svg width="26px" height="26px" viewBox="0 0 27 27" focusable="false" aria-hidden="true"
+                    style="pointer-events: none;">
+                    <path fill="currentColor"
+                        d="m1.75,7.75l6.68036,0c0.33557,1.29523 1.50391,2.25879 2.90265,2.25879s2.56708,-0.96356 2.90265,-2.25879l10.01434,0c0.41406,0 0.75,-0.33594 0.75,-0.75s-0.33594,-0.75 -0.75,-0.75l-10.01434,0c-0.33557,-1.29523 -1.50391,-2.25879 -2.90265,-2.25879s-2.56708,0.96356 -2.90265,2.25879l-6.68036,0c-0.41406,0 -0.75,0.33594 -0.75,0.75s0.33594,0.75 0.75,0.75zm9.58301,-2.25879c0.83203,0 1.50879,0.67676 1.50879,1.50879s-0.67676,1.50879 -1.50879,1.50879s-1.50879,-0.67676 -1.50879,-1.50879s0.67676,-1.50879 1.50879,-1.50879z">
+                    </path>
+                    <path fill="currentColor"
+                        d="m24.25,12.25l-1.60614,0c-0.33557,-1.29523 -1.50391,-2.25879 -2.90265,-2.25879s-2.56708,0.96356 -2.90265,2.25879l-15.08856,0c-0.41406,0 -0.75,0.33594 -0.75,0.75s0.33594,0.75 0.75,0.75l15.08856,0c0.33557,1.29523 1.50391,2.25879 2.90265,2.25879s2.56708,-0.96356 2.90265,-2.25879l1.60614,0c0.41406,0 0.75,-0.33594 0.75,-0.75s-0.33594,-0.75 -0.75,-0.75zm-4.50879,2.25879c-0.83203,0 -1.50879,-0.67676 -1.50879,-1.50879s0.67676,-1.50879 1.50879,-1.50879s1.50879,0.67676 1.50879,1.50879s-0.67676,1.50879 -1.50879,1.50879z">
+                    </path>
+                    <path fill="currentColor"
+                        d="m24.25,18.25l-14.53186,0c-0.33551,-1.29523 -1.50378,-2.25879 -2.90173,-2.25879c-1.39875,0 -2.56708,0.96356 -2.90265,2.25879l-2.16376,0c-0.41406,0 -0.75,0.33594 -0.75,0.75s0.33594,0.75 0.75,0.75l2.16376,0c0.33557,1.29523 1.5039,2.25879 2.90265,2.25879c1.39795,0 2.56622,-0.96356 2.90173,-2.25879l14.53186,0c0.41406,0 0.75,-0.33594 0.75,-0.75s-0.33594,-0.75 -0.75,-0.75zm-17.43359,2.25879c-0.83203,0 -1.50879,-0.67676 -1.50879,-1.50879s0.67676,-1.50879 1.50879,-1.50879c0.83105,0 1.50781,0.67676 1.50781,1.50879s-0.67676,1.50879 -1.50781,1.50879z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Section -->
+    <sectionv role="main" id="main">
+        <!-- Start article -->
+        <article class="main homepage">
+            <figure class="homepage_photo homepage_">
+                <img src="img/undraw_profile_6l1l.svg" alt="homepage_photo" class="about_photo" />
+            </figure>
+            <div class="homepage_work-intro homepage_">
+                <h2 class="homepage_work_title h4">
+                    <span>Front-End Development <br />
+                        &amp; Training</span>
+                </h2>
+                <p>
+                    I’m a freelance front-end UI developer and trainer specializing in
+                    responsive Web design, modern CSS, progressive enhancement, and
+                    accessibility. I work with my clients to create interfaces and
+                    design systems that work for everyone, and that are optimized for
+                    accessibility and speed. Find out more about
+                    <a href="/work/">my work</a> or <a href="/contact/">hire me</a> .
+                </p>
+            </div>
+            <div class="homepage_clients homepage_">
+                <h3 class="homepage_clients_title mb0 center">
+                    Trusted By
+                </h3>
+                <ul class="homepage_clients_list">
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/cobi.svg" alt="cobi">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/netflix.svg" alt="netflix">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/khan-academy.svg" alt="khan-academy">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/schiphol.svg" alt="schiphol">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/smashing-magazine.svg" alt="smashing-magazine">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/superfriendly.svg" alt="superfriendly">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/codrops-logo.svg" alt="codrops-logo">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/provata.svg" alt="provata">
+                        </a>
+                    </li>
+                    <li class="homepage_clients_item">
+                        <a href="#">
+                            <img src="img/telus.svg" alt="telus">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="homepage_speakin-intro homepage_">
+                <h2 class="homepage_speaking_title h4">
+                    <span>Speaking &amp; Workshops</span>
+                </h2>
+                <p>
+                    In between my client projects, I speak and run workshops about the latest in front-end at events all
+                    over the globe.
+                </p>
+                <br>
+                <h3 class="mb0 h5" style="font-style: normal;">Upcoming appearances:</h3>
+                <ul class="l-conferences">
+                    <li class="c-conference">
+                        <a href="#" class="c-conference_name"> <u>Web Directions Summit </u></a>
+                        <span class="c-conference_date">October 31 – November 1, 2019</span>
+                        <span class="c-conference_location">Sydney, Australia</span>
+                        <a href="" class="c-conference_video"><span>Watch Video</span></a>
+                    </li>
+                    <li class="c-conference">
+                        <a href="#" class="c-conference_name "> <u>An Event
+                                Apart </u> </a>
+                        <span class="c-conference_date">December 9–11, 2019</span>
+                        <span class="c-conference_location">San Francisco, USA</span>
+                        <a href="" class="c-conference_video"><span>Watch Video</span></a>
+                    </li>
+                </ul>
+                <p class="uppercase"><a href="speaking"> <u> See all speaking </u> </a></p>
+            </div>
+            <div class="homepage_speaking-photo homepage_">
+                <figure>
+                    <img src="img/undraw_conference_speaker_6nt7.svg" alt="Photo of speaking">
+                </figure>
+            </div>
+        </article>
+        <!-- End article -->
+    </sectionv>
+
+    <!-- End Section -->
+
+    <!-- Start Footer -->
+    <footer class="main-footer full-width" role="contentinfo">
+        <div class="footer_more">
+            <h2 class="center h5" id="footer-links-title">More On This Site:</h2>
+            <nav class="secondary-nav" aria-labelledby="footer-link-title">
+                <ul class="secondary-nav_list">
+                    <li class="secondary-nav_item">
+                        <a href="">About</a>
+                        <span>A little bit more about me.</span>
+                    </li>
+                    <li class="secondary-nav_item">
+                        <a href="">Speaking</a>
+                        <span>Past and future conference appearances, with links to talk videos.</span>
+                    </li>
+                    <li class="secondary-nav_item">
+                        <a href="">The Desk</a>
+                        <span>Articles on travel, productivity, life, and more.</span>
+                    </li>
+                    <li class="secondary-nav_item">
+                        <a href="">#ITL</a>
+                        <span>Useful little tips, tricks and pieces of knowledge I learned today.</span>
+                    </li>
+                    <li class="secondary-nav_item">
+                        <a href="">Interviews</a>
+                        <span>Public interviews about my work, </span>
+                    </li>
+                    <li class="secondary-nav_item">
+                        <a href="">Podcasts</a>
+                        <span>Spoken interviews about work, freelance career, and beyond.</span>
+                    </li>
+                    <li class="secondary-nav_item">
+                        <a href="">Press Kit</a>
+                        <span>Biographies and photos for public use.</span>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer_links">
+                <li>
+                    <a href="#">Articles RSS Feed</a>
+                </li>
+                <li>
+                    <a href="#">The Desk’s RSS Feed</a>
+                </li>
+                <li>
+                    <a href="#">#TIL RSS Feed</a>
+                </li>
+                <li>
+                    <a href="#">My Instagram</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer_notes">
+            <br>
+            <p>
+                <strong>© 2019 All rights reserved.</strong>
+            </p>
+        </div>
+    </footer>
+    <!-- Start Footer -->
+
+    <!-- jQuery Library -->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <!-- My Js plugins -->
+    <script src="js/plugins.js"></script>
+</body>
+
+</html>
