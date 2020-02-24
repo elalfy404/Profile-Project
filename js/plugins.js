@@ -26,25 +26,26 @@ let modalCompanies;
 modalCompanies = document.getElementById("settings-panel_trigger-BITTON");
 
 modalCompanies.onclick = function (event) {
-    'use strict';
 
     if (event.target == modalCompanies) {
 
         document.getElementById("settings-panel").style.display = 'block';
+        document.body.classList.add('open__');
     };
 };
 // 
 
 // When user clicks on <closemodal> (x), close winsettings 
-let closemodal;
-closemodal = document.getElementById("close");
+let close_modal;
+close_modal = document.getElementById("close");
 
-closemodal.onclick = function (event) {
-    'use strict';
+close_modal.onclick = function (event) {
 
-    if (event.target == closemodal) {
+    if (event.target == close_modal) {
 
         document.getElementById("settings-panel").style.display = 'none';
+        document.body.classList.remove('open__');
+
     };
 };
 // 
@@ -54,7 +55,6 @@ let winsettings;
 winsettings = document.getElementById("settings-panel");
 
 window.addEventListener("click", function (event) {
-    'use strict';
 
     if (event.target == winsettings) {
         winsettings.style.display = "none";
